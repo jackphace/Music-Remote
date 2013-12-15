@@ -21,7 +21,13 @@ The supported actions are:
                             <thead>
                                 <tr id="compatibility-actions"><th></th><th>Previous</th><th>Next</th><th>Play</th><th>Dislike</th><th>Store</th><th>Activate Tab</th></tr>
                             </thead>
-                            <tbody id="compatibility-list"><tr id="Amazon-compatibility"><td>Amazon</td><td>O</td><td>O</td><td>O</td><td>X</td><td>X</td><td>O</td></tr><tr id="Google-compatibility"><td>Google</td><td>O</td><td>O</td><td>O</td><td>X</td><td>X</td><td>O</td></tr><tr id="Grooveshark-compatibility"><td>Grooveshark</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td></tr><tr id="Pandora-compatibility"><td>Pandora</td><td>O</td><td>O</td><td>O</td><td>X</td><td>X</td><td>O</td></tr><tr id="Youtube-compatibility"><td>Youtube</td><td>O</td><td>O</td><td>O</td><td>X</td><td>X</td><td>O</td></tr></tbody>
+                            <tbody id="compatibility-list">
+							<tr id="Amazon-compatibility"><td>Amazon</td><td>O</td><td>O</td><td>O</td><td>X</td><td>X</td><td>O</td></tr>
+							<tr id="Google-compatibility"><td>Google</td><td>O</td><td>O</td><td>O</td><td>X</td><td>X</td><td>O</td></tr>
+							<tr id="Grooveshark-compatibility"><td>Grooveshark</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td></tr>
+							<tr id="Pandora-compatibility"><td>Pandora</td><td>O</td><td>O</td><td>O</td><td>X</td><td>X</td><td>O</td></tr>
+							<tr id="Soundcloud-compatibility"><td>Soundcloud</td><td>O</td><td>O</td><td>O</td><td>X</td><td>X</td><td>O</td></tr>
+							<tr id="Youtube-compatibility"><td>Youtube</td><td>O</td><td>O</td><td>O</td><td>X</td><td>X</td><td>O</td></tr></tbody>
                         </table>
                         
 
