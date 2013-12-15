@@ -63,6 +63,9 @@
     <Content Include="app\scripts\pandora\next.js" />
     <Content Include="app\scripts\pandora\playPause.js" />
     <Content Include="app\scripts\pandora\previous.js" />
+    <Content Include="app\scripts\soundcloud\next.js" />
+    <Content Include="app\scripts\soundcloud\playPause.js" />
+    <Content Include="app\scripts\soundcloud\previous.js" />
     <Content Include="app\scripts\youtube\next.js" />
     <Content Include="app\scripts\youtube\playPause.js" />
     <Content Include="app\scripts\youtube\previous.js" />

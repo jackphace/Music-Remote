@@ -1,5 +1,5 @@
 //Settings to load
-var settings = ["amazon", "google", "grooveshark", "pandora", "youtube", "first"];
+var settings = ["amazon", "google", "grooveshark", "pandora", "soundcloud", "youtube", "first"];
 
 //Sites and their corresponding url to query
 var sites = {
@@ -7,6 +7,7 @@ var sites = {
     'google': "*://play.google.com/music/listen*",
     'grooveshark': "*://grooveshark.com/*",
     'pandora': "*://www.pandora.com/*",
+    'soundcloud': "*://soundcloud.com/*",
     'youtube': "*://www.youtube.com/*"
 };
 
@@ -44,7 +45,7 @@ function controlSites(action, settings) {
     //Chord toggles the state of chord (e.g., chord+chord = not in a chord)
     if (action == 'remote-chord') {
         chord = !chord;
-        console.log('Chord = ' + chord);
+        //console.log('Chord = ' + chord);
         return;
     }
 
@@ -95,7 +96,7 @@ function controlTab(player, tab, action, isChord) {
             case 'remote-toggle':
                 //If the tab ID is the same as some navigation, it means the user is still on the player's tab 
                 //and activated the navigation shortcut again, and would like to go back to their previous tab
-                console.log("Activated tab = " + activatedTabId);
+                //console.log("Activated tab = " + activatedTabId);
                 //console.log("Found tab = " + tab.id);
 
                 //Find the current tab
@@ -120,6 +121,8 @@ function controlTab(player, tab, action, isChord) {
                             previousWindowId = null;
                         });
 
+                        //Do nothing else
+                        return;
                     }
                         //Otherwise navigate to the player
                     else {
@@ -180,18 +183,23 @@ function controlTab(player, tab, action, isChord) {
         }
     }
 
-    //Inject whatever script action is specified into the select tab
-    //Uses injection technique described here: http://stackoverflow.com/questions/4698118/google-chrome-extensions-how-to-include-jquery-in-programatically-injected-cont
-    file = "scripts/" + player + "/" + file;
-    if (injectJQuery) {
-        chrome.tabs.executeScript(tab.id, { file: "jquery-1.10.2.min.js" }, function () {
-            chrome.tabs.executeScript(tab.id, { file: file });
-        });
+    //Always injecting jQuery for now
+    chrome.tabs.executeScript(tab.id, { file: "jquery-1.10.2.min.js" }, function () {
+        chrome.tabs.executeScript(tab.id, { file: file });
     }
-        //No jQuery injected into script's environment
-    else {
-        chrome.tabs.executeScript(tab.id, {
-            file: file
-        });
+
+        ////Inject whatever script action is specified into the select tab
+        ////Uses injection technique described here: http://stackoverflow.com/questions/4698118/google-chrome-extensions-how-to-include-jquery-in-programatically-injected-cont
+        //file = "scripts/" + player + "/" + file;
+        //if (injectJQuery) {
+        //    chrome.tabs.executeScript(tab.id, { file: "jquery-1.10.2.min.js" }, function () {
+        //        chrome.tabs.executeScript(tab.id, { file: file });
+        //    });
+        //}
+        //    //No jQuery injected into script's environment
+        //else {
+        //    chrome.tabs.executeScript(tab.id, {
+        //        file: file
+        //    });
+        //}
     }
-}
