@@ -1,9 +1,9 @@
 {
   "name": "Music Remote",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Controls music players.",
   "icons": {
-    "128": "icon128.png"
+    "128": "icon_128.png"
   },
   "manifest_version":2,
   "commands": {
@@ -44,6 +44,7 @@
   "permissions": [
 	"storage",
 	"activeTab",
+	"*://soundcloud.com/*",
 	"*://grooveshark.com/*",
 	"*://www.youtube.com/*",
 	"*://www.pandora.com/*",
