@@ -186,20 +186,21 @@ function controlTab(player, tab, action, isChord) {
     //Always injecting jQuery for now
     chrome.tabs.executeScript(tab.id, { file: "jquery-1.10.2.min.js" }, function () {
         chrome.tabs.executeScript(tab.id, { file: file });
-    }
+    });
 
-        ////Inject whatever script action is specified into the select tab
-        ////Uses injection technique described here: http://stackoverflow.com/questions/4698118/google-chrome-extensions-how-to-include-jquery-in-programatically-injected-cont
-        //file = "scripts/" + player + "/" + file;
-        //if (injectJQuery) {
-        //    chrome.tabs.executeScript(tab.id, { file: "jquery-1.10.2.min.js" }, function () {
-        //        chrome.tabs.executeScript(tab.id, { file: file });
-        //    });
-        //}
-        //    //No jQuery injected into script's environment
-        //else {
-        //    chrome.tabs.executeScript(tab.id, {
-        //        file: file
-        //    });
-        //}
-    }
+
+    ////Inject whatever script action is specified into the select tab
+    ////Uses injection technique described here: http://stackoverflow.com/questions/4698118/google-chrome-extensions-how-to-include-jquery-in-programatically-injected-cont
+    //file = "scripts/" + player + "/" + file;
+    //if (injectJQuery) {
+    //    chrome.tabs.executeScript(tab.id, { file: "jquery-1.10.2.min.js" }, function () {
+    //        chrome.tabs.executeScript(tab.id, { file: file });
+    //    });
+    //}
+    //    //No jQuery injected into script's environment
+    //else {
+    //    chrome.tabs.executeScript(tab.id, {
+    //        file: file
+    //    });
+    //}
+}
