@@ -42,7 +42,7 @@
     <Content Include="app\bootstrap.css" />
     <Content Include="app\bootstrap.min.css" />
     <Content Include="app\bootstrap.min.js" />
-    <Content Include="app\icon128.png" />
+    <Content Include="app\icon_128.png" />
     <Content Include="app\img\icon.png" />
     <Content Include="app\jquery-1.10.2.min.js" />
     <Content Include="app\options.css" />
@@ -76,7 +76,6 @@
     <Content Include="index.htm" />
     <Content Include="Properties\build\ligershark.chrome.targets" />
     <Content Include="screenshots\readme.txt" />
-    <Content Include="app\README.md" />
     <Content Include="app\manifest.json" />
     <None Include="scripts\_references.js" />
     <None Include="scripts\chrome-api-vsdoc.js" />
