@@ -1,0 +1,5 @@
+Could add:
+1) More site integrations
+2) Like/dislike/save / other special functions
+3) Close these tabs  (...save..?)
+4) Better selection of which tabs get all done like

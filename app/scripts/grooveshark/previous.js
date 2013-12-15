@@ -1,0 +1,1 @@
+document.getElementById('play-prev').click();

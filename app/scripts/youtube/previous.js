@@ -1,0 +1,1 @@
+document.getElementById('watch7-playlist-bar-prev-button').click();

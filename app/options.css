@@ -1,0 +1,46 @@
+#wrapper{
+    height:100%;
+    margin: 50px auto;
+    float: none;
+    padding: 40px;
+    border: 4px solid black;
+    border-radius: 12px;
+}
+
+#optionsContent {
+    min-height: 200px;
+}
+
+.form-medium .control-label {
+    width: 180px;
+}
+
+.form-medium .controls {
+    margin-left: 200px;
+}
+
+.form-medium .control-group {
+    margin-bottom: 7px;
+}
+
+#options legend {
+    margin-bottom: 0px;
+}
+
+#options .control-group {
+    margin-top: 5px;
+}
+
+#options form {
+    margin-bottom: 5px;
+}
+
+#options hr {
+    margin: 5px 0px;
+
+}
+
+#compatibility-list td, #compatibility-actions th
+{
+    text-align: center;
+}
