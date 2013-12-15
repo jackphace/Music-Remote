@@ -184,6 +184,7 @@ function controlTab(player, tab, action, isChord) {
     }
 
     //Always injecting jQuery for now
+    file = "scripts/" + player + "/" + file;
     chrome.tabs.executeScript(tab.id, { file: "jquery-1.10.2.min.js" }, function () {
         chrome.tabs.executeScript(tab.id, { file: file });
     });

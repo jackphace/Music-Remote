@@ -4,7 +4,7 @@ if (!(!window.jQuery)) {
 
     //If there is a song to dislike, dislike it
     if (toggle.length > 0) {
-        previous[0].click();
+        toggle[0].click();
     }
     else {
         console.log('No play toggle button found.');
