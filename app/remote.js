@@ -153,6 +153,7 @@ function controlTab(player, tab, action, isChord) {
                         return;
                     }
                 });
+                break;
 
             case 'remote-next':
                 file = 'favorite.js';

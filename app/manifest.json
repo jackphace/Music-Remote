@@ -1,6 +1,6 @@
 {
   "name": "Music Remote",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Controls music players.",
   "icons": {
     "128": "icon_128.png"
